@@ -3,8 +3,8 @@ set -e
 
 # --- ffmpeg grab přímo z VNC ---
 # uprav IP a port podle tvého Windows XP VM
-VNC_HOST="192.168.102.142"
-VNC_PORT="5000"
+VNC_HOST="192.168.102.49"
+VNC_PORT="5988"
 
 # vytvoř HLS výstupní adresář
 mkdir -p /var/www/llhls
