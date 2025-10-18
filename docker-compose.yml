@@ -5,7 +5,7 @@ services:
     build: .
     container_name: novnc_capture
     environment:
-      NOVNC_URL: "http://192.168.1.100:6080/vnc.html?path=/websockify"
+      NOVNC_URL: "https://192.168.102.49:8006/?console=kvm&novnc=1&vmid=106&vmname=mce&node=muslenka&resize=off&cmd="
     ports:
       - "8888:80"      # HLS stream
       - "6080:6080"  # noVNC web UI
