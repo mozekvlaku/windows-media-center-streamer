@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  capture:
+    build: .
+    container_name: novnc_capture
+    environment:
+      NOVNC_URL: "http://192.168.1.100:6080/vnc.html?path=/websockify"
+    ports:
+      - "8888:80"      # HLS stream
+      - "6080:6080"  # noVNC web UI
+    restart: unless-stopped
+    shm_size: '1gb'
